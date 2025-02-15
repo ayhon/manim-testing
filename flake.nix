@@ -21,11 +21,7 @@
             libGL
         ];
         LD_LIBRARY_PATH = "$LD_LIBRARY_PATH:${pkgs.libGL}/lib";
-        runtimeDependencies = [
-            ""
-        ];
         shellHook = ''
-          ls ${pkgs.libGL}/lib 
           exec zsh
         '';
     };
